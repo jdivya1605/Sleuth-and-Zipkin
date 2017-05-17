@@ -1,10 +1,7 @@
 package com.car;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -15,17 +12,22 @@ public class CarController {
     private CarService carService;
 
     @RequestMapping("/")
-    public String home(){
+    public String home() {
         return "ok!!";
     }
 
     @RequestMapping("/getallCars")
-    public List<Car> getAllCars(){
+    public List<Car> getAllCars() {
         return carService.getAllCars();
     }
 
     @PostMapping("/Car")
-    public void addCar(@RequestBody Car car){
+    public void addCar(@RequestBody Car car) {
         carService.addCar(car);
+    }
+
+    @RequestMapping("/find")
+    public List<Car> findSpecific(@RequestParam String make, @RequestParam String year) {
+        return carService.find(make, year);
     }
 }

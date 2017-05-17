@@ -18,7 +18,11 @@ public class CarService {
         return cars;
     }
 
-    public void addCar(Car car){
+    public void addCar(Car car) {
         carRepo.save(car);
+    }
+
+    public List<Car> find(String make, String year) {
+        return carRepo.findByMakeInAndYearIn(make, year);
     }
 }
