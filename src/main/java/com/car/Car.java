@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-//testcommit 1
+//testcommit 2
 @Entity
 public class Car {
     @Id @GeneratedValue(strategy= GenerationType.AUTO)
