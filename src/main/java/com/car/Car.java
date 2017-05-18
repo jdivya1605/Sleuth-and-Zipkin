@@ -1,7 +1,9 @@
 package com.car;
 
 import javax.persistence.*;
+//trying to merge now
 //deleting-usingStashed
+//resolving conflicts
 @Entity
 public class Car {
     @Id @GeneratedValue(strategy= GenerationType.AUTO)
