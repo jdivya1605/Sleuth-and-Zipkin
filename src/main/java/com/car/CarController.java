@@ -16,7 +16,7 @@ public class CarController {
         return "ok!!";
     }
 
-    @RequestMapping("/getallCars")
+    @RequestMapping("/Cars")
     public List<Car> getAllCars() {
         return carService.getAllCars();
     }
