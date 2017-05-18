@@ -2,7 +2,7 @@ package com.car;
 
 import javax.persistence.*;
 
-//changes --commit Anant
+//changes --commit Anant-v1
 @Entity
 public class Car {
     @Id @GeneratedValue(strategy= GenerationType.AUTO)
