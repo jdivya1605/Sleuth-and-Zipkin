@@ -2,8 +2,10 @@ package com.car;
 
 import javax.persistence.*;
 
-//changes --commit Anant7
-//changes --commit Anant-v1
+//this is the final conflict change that i will make
+
+
+
 @Entity
 public class Car {
     @Id @GeneratedValue(strategy= GenerationType.AUTO)
