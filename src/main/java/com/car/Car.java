@@ -1,9 +1,6 @@
 package com.car;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 //testcommit 1
 @Entity
@@ -14,6 +11,9 @@ public class Car {
     private String model;
     private String year;
     private String color;
+
+    @ManyToOne
+    private Owner owner;
 
     public Car(int id, String make, String model, String year, String color){
         this.id = id;

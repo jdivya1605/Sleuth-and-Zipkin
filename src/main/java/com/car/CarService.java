@@ -23,6 +23,8 @@ public class CarService {
     }
 
     public List<Car> find(String make, String year) {
-        return carRepo.findByMakeInAndYearIn(make, year);
+//        return carRepo.findByMakeInAndYearIn(make, year);
+
+        return carRepo.findCar();
     }
 }
