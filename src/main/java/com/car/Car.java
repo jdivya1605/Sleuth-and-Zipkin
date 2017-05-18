@@ -1,7 +1,7 @@
 package com.car;
 
 import javax.persistence.*;
-
+//usingStashed
 @Entity
 public class Car {
     @Id @GeneratedValue(strategy= GenerationType.AUTO)
