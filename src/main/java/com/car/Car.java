@@ -1,11 +1,9 @@
 package com.car;
 
 import javax.persistence.*;
-
-//this is the final conflict change that i will make
-//1
-//2
-//3
+//good
+//good
+//good
 @Entity
 public class Car {
     @Id @GeneratedValue(strategy= GenerationType.AUTO)
